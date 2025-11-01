@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   Tipografía y colores
+======================================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* gris claro de fondo */
+    color: #333;               /* texto oscuro */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+}
+
+/* ========================================
+   Header
+======================================== */
+header {
+    background-color: #0077b6; /* azul moderno */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block; /* para centrar fácilmente */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   Navigation (Flex) 
+======================================== */
+nav {
+    display: flex;
+    justify-content: center; /* links centrados horizontalmente */
+    gap: 1rem;               /* espacio entre links */
+    flex-wrap: wrap;          /* en pantallas pequeñas se ajusta */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* ========================================
+   Main
+======================================== */
+main {
+    max-width: 1200px; /* ancho máximo */
+    margin: 2rem auto; /* centrado horizontal */
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* tarjetas responsivas */
+    gap: 2rem; /* espacio entre tarjetas */
+}
+
+/* ========================================
+   Card sections
+======================================== */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   Footer
+======================================== */
+footer {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ffd166;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
