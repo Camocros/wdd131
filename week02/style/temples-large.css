@@ -1,0 +1,62 @@
+
+@media only screen and (min-width: 32rem) {
+
+
+  header span {
+    font-size: 2rem;
+  }
+
+
+
+  nav a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    padding: auto;
+   
+  }
+
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+  }
+
+  .card figcaption {
+    margin-top: 0.5rem;
+    color: #444;
+    font-size: 1rem;
+  }
+
+ 
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: 0.95rem;
+  }
+}
