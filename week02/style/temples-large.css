@@ -25,6 +25,24 @@
     padding: 2rem;
   }
 
+.res-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.res-grid section {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.res-grid img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: .5rem;
+}
   main h1 {
     grid-column: 1 / -1;
     text-align: center;
