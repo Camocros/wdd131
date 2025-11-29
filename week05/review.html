@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .review-box {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Your Review Has Been Submitted</h1>
+
+
+  </div>
+
+  <footer>
+    <p>C. Camilo Serna </p>
+
+  </footer>
+
+  <script>
+  
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+
+    document.getElementById("reviewCount").textContent = count;
+  </script>
+
+</body>
+</html
