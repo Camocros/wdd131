@@ -1,0 +1,52 @@
+
+/* REQUIRED: ROOT VARIABLES */
+:root {
+    --primary-color: #0066cc;
+    --accent-color: #ffcc00;
+    --text-dark: #222;
+}
+
+/* REQUIRED: ::after */
+.place-title::after {
+    content: " 🇨🇴";
+}
+
+/* HERO SECTION */
+.hero picture,
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* WEATHER ICON */
+.weather-icon img {
+    width: 60px;
+}
+
+/* BASIC LAYOUT */
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 1rem;
+}
+
+.data-box,
+.weather-box {
+    border: 2px solid #ddd;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}

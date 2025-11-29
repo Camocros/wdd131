@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cocora Valley - Colombia</title>
+
+    <!-- REQUIRED BY AUDIT -->
+    <meta name="description" content="Discover Cocora Valley in Colombia: weather, population, capital city, and key details about this beautiful South American country.">
+    <meta name="author" content="C. Camilo Serna">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1 class="place-title">Colombia</h1>
+</header>
+
+<main>
+
+    <!-- HERO IMAGE WITH SRCSET + WEBP -->
+    <section class="hero">
+
+        <picture>
+            <source srcset="images/cocora-large.webp" media="(min-width: 800px)">
+            <source srcset="images/cocora-small.webp" media="(max-width: 799px)">
+            <img src="images/cocora.jpg" alt="Cocora Valley" class="hero-image">
+        </picture>
+
+    </section>
+
+    <!-- DATA SECTION -->
+    <section class="data-box">
+        <h2>Data</h2>
+        <ul>
+            <li><span>Country:</span> Republic of Colombia</li>
+            <li><span>Capital:</span> Bogotá</li>
+            <li><span>Area:</span> 1,141,748 km²</li>
+            <li><span>Population:</span> ~52.7 million (2024)</li>
+            <li><span>Time Zone:</span> UTC-5 (COT)</li>
+            <li><span>Calling Code:</span> +57</li>
+        </ul>
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather-box">
+        <h2>Weather</h2>
+
+        <!-- SVG ICON REQUIRED -->
+        <div class="weather-icon">
+            <img src="images/sun.svg" alt="Weather Icon">
+        </div>
+
+        <ul>
+            <li><span>Temperature:</span> 24°C (75°F)</li>
+            <li><span>Conditions:</span> Partly cloudy</li>
+            <li><span>Humidity:</span> 72%</li>
+            <li><span>Chance of Rain:</span> 68%</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> ☀️ C. Camilo Serna — Utah, USA ☀️</p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
