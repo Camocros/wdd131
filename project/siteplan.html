@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadia – Behavior Support Framework</title>
+
+  <!-- FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="siteplan.css">
+
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Nadia</div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">How it Works</a></li>
+        <li><a href="#signup" class="nav-cta">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO MODIFED 11/28 --- ASK SADIE MORE INFROMATION ABPUT NADIA  -->
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <h1>Nadia</h1>
+        <p class="hero-subtitle">Behavior Support Framework</p>
+
+        <div class="hero-buttons">
+          <a href="#signup" class="btn primary">Sign Up</a>
+          <a href="#about" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES //  POSSIBLE IMAGES  -->
+    <section class="features" id="features">
+      <h2>Why Early Education Programs Choose Nadia</h2>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Playful Learning</h3>
+          <p>Interactive activities that help children learn through games, stories, and exploration.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Guided Progress</h3>
+          <p>Clear learning paths designed by educators to track skills and celebrate milestones.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Safe Environment</h3>
+          <p>A child-friendly space with content curated specifically for ages 5 to 12.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT / IMAGE AREA #2-->
+    <section class="highlight" id="about">
+      <div class="highlight-content">
+        <h2>How Nadia Works</h2>
+        <p>
+          Nadia organizes learning into short, focused sessions that fit into a child’s day. 
+          Each module blends reading, problem-solving, and creativity to keep kids engaged 
+          while building strong foundations in core skills.
+        </p>
+        <p>
+          Parents can check simple progress reports, see recommended activities, 
+          and adjust the pace according to their child’s needs.
+        </p>
+      </div>
+
+      <div class="highlight-visual">
+        <!-- IMAGE ABOUT THE FRAMEWORK -->
+        <span class="placeholder-text">Future illustration / dashboard preview</span>
+      </div>
+    </section>
+
+    <!-- SIGN UP SECTION ?? OR SOMETHING ELSE  -->
+    <section class="signup-section" id="signup">
+      <h2>Get Early Access</h2>
+      <p>Join the waiting list and be the first to try Nadia with your kids.</p>
+
+      <form class="signup-form">
+        <label for="parent-name">Parent Name</label>
+        <input type="text" id="parent-name" name="parent-name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <button type="submit" class="btn primary">Request Access</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Nadia – Learning Framework for Kids. ' AUTHOR - C Camilo Serna' </p>
+  </footer>
+
+  <script>
+    // DATE 
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

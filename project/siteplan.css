@@ -1,0 +1,261 @@
+:root {
+  --green-main: #2ecc71;
+  --green-dark: #1e8449;
+  --green-soft: #d9fbe6;
+  --green-bg: #f1fff7;
+  --white: #ffffff;
+  --text-main: #13482b;
+}
+
+/* ====== GLOBAL ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--green-bg);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* ====== LAYOUT WRAPPERS ====== */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ====== HEADER ====== */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--white);
+  border-bottom: 2px solid var(--green-soft);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--green-dark);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-cta {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background-color: var(--green-main);
+  color: var(--white);
+}
+
+/* ====== HERO ====== */
+.hero {
+  background-color: var(--green-main);
+  color: var(--white);
+  border-radius: 1.25rem;
+  padding: 3rem 1.75rem;
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ====== BUTTONS ====== */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+              background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn.primary {
+  background-color: var(--white);
+  color: var(--green-dark);
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* ====== FEATURES ====== */
+.features {
+  margin-bottom: 2.5rem;
+}
+
+.features h2 {
+  text-align: center;
+  color: var(--green-dark);
+  margin-bottom: 1.5rem;
+}
+
+.features-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-card {
+  background-color: var(--white);
+  border-radius: 0.9rem;
+  padding: 1.3rem;
+  border: 1px solid var(--green-soft);
+}
+
+/* ====== HIGHLIGHT SECTION ====== */
+.highlight {
+  background-color: var(--green-soft);
+  border-radius: 1.1rem;
+  padding: 1.8rem 1.4rem;
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.highlight-visual {
+  border-radius: 0.9rem;
+  border: 2px dashed var(--green-dark);
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c9f6da;
+}
+
+.placeholder-text {
+  font-size: 0.9rem;
+  color: var(--green-dark);
+  text-align: center;
+}
+
+/* ====== SIGNUP ====== */
+.signup-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.signup-section h2 {
+  color: var(--green-dark);
+}
+
+.signup-form {
+  max-width: 420px;
+  margin: 1.5rem auto 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.signup-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.signup-form input {
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--green-soft);
+  font-size: 0.95rem;
+}
+
+/* ====== FOOTER ====== */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 0 2rem;
+  font-size: 0.85rem;
+  color: var(--green-dark);
+}
+
+/* ====== RESPONSIVE ====== */
+
+@media (min-width: 700px) {
+  .hero {
+    text-align: left;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .highlight {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-nav ul {
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding: 2.4rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
