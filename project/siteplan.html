@@ -9,19 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="siteplan.css">
+  <link rel="stylesheet" href="style/siteplan.css">
+  
 
 
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">Nadia</div>
+   <div class="logo"> Nadia | Home <span id="greeting" class="header-greeting"></span> </div><!--- FIRST JAVASCRIPT FUNCTION, GREETING MSG -->
 
     <nav class="main-nav">
       <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">How it Works</a></li>
-        <li><a href="#signup" class="nav-cta">Sign Up</a></li>
+        <li><a href="bookus.html">Book With Us</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="siteplan.html" class="nav-cta">Home</a></li>
       </ul>
     </nav>
   </header>
@@ -30,12 +31,13 @@
     <!-- HERO MODIFED 11/28 --- ASK SADIE MORE INFROMATION ABPUT NADIA  -->
     <section class="hero" id="top">
       <div class="hero-content">
-        <h1>Nadia</h1>
+        <h1>Nadia Web Page #1--</h1>
+    
         <p class="hero-subtitle">Behavior Support Framework</p>
 
         <div class="hero-buttons">
-          <a href="#signup" class="btn primary">Sign Up</a>
-          <a href="#about" class="btn secondary">Learn More</a>
+          <a href="bookus.html" class="btn primary">Book With Us</a>
+          <a href="learn.html" class="btn secondary">Learn More</a>
         </div>
       </div>
     </section>
@@ -105,8 +107,9 @@
   </footer>
 
   <script>
-    // DATE 
+      // SECOND FUNCTION IN JAVASCRIPT -  DATE !
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script src="script/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadia – Behavior Support Framework</title>
+
+  <!-- FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style/siteplan.css">
+
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Nadia | Learn More </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="bookus.html">Book With Us</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="siteplan.html" class="nav-cta">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO MODIFED 11/28 --- ASK SADIE MORE INFROMATION ABPUT NADIA  -->
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <h1>Nadia Web Page #2--</h1>
+        <p class="hero-subtitle">Behavior Support Framework</p>
+
+        <div class="hero-buttons">
+          <a href="bookus.html" class="btn primary">Book With Us</a>
+          <a href="learn.html" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+   <section class="founders-section">
+  <h2>Meet Our Founders</h2>
+
+  <div class="founders-grid">
+    
+    <!-- SADIE --> 
+     <!-- Images with Lazy Loading AND DOM interaction-->
+    <article class="founder-card">
+      <img src="images/sadie.jpeg" id="founder-sadie" class="founder-photo" loading="lazy">
+      <h3>Sadie Rodríguez</h3>
+      <p class="founder-role">Founder & CEO</p>
+      <p class="founder-bio">
+        She transforms limited resources into meaningful impact, creating practical solutions that help early education programs grow with clarity and purpose.
+      </p>
+    </article>
+
+    <!-- ZOEI -->
+     <!-- Images with Lazy Loading AND DOM interaction -->
+    <article class="founder-card">
+     <img src="images/zoie.jpg" id="founder-zoie" class="founder-photo" loading="lazy">
+      <h3>Zoei Arnold</h3>
+      <p class="founder-role">Co-Founder & Consulting Lead</p>
+      <p class="founder-bio">
+        She turns complex challenges into simple pathways, guiding schools and families with strategies that bring stability, progress, and confidence.
+      </p>
+    </article>
+
+  </div>
+</section>
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Nadia – Learning Framework for Kids. ' AUTHOR - C Camilo Serna' </p>
+  </footer>
+
+
+<script src="script/script.js"></script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
